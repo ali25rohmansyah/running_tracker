@@ -11,7 +11,7 @@ class CancelTrackingDialog: DialogFragment() {
     private var yesListener: (() -> Unit)? = null
 
     fun setYesListener(listener: () -> Unit){
-        yesListener
+        yesListener = listener
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
